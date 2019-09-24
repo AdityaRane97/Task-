@@ -32,16 +32,6 @@ $(document).ready(function() {
       +totalProteins.html(currentProteins + fat);
     }
 
-    var attr = $(this).attr('vegan');
-    if (typeof attr !== typeof undefined && attr !== false) {
-    	if(vegan) {
-      	$('#type').text("This is Vegan!");
-      	$('#typeImage').attr("src", "https://upload.wikimedia.org/wikipedia/hi/thumb/b/b2/Veg_symbol.svg/768px-Veg_symbol.svg.png");
-      }
-    } else {
-      $('#type').text("This is not Vegan!");
-      vegan = false;
-      $('#typeImage').attr("src", "http://www.hellocurry.com/images/nonveg_icon.png");
-    }
+    
   });
 });
